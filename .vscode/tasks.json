@@ -1,0 +1,10 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Open hotel website frontend",
+			"type": "shell",
+			"command": "start chrome \"file:///d:/my website/Feroku/client/index.html\""
+		}
+	]
+}

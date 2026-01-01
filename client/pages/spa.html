@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spa & Wellness | LuxeStay Hotel</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        premium: {
+                            gold: '#D4AF37',
+                            dark: '#1A1A1A',
+                            navy: '#0F172A',
+                            cream: '#F5F5DC'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-premium-navy text-white font-sans">
+    <nav class="navbar hero-nav">
+        <a href="../index.html" class="nav-logo">LuxeStay</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="spa.html" class="active">Spa</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-[60vh] flex items-center justify-center bg-gray-900 overflow-hidden">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/40 z-10"></div>
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-cover bg-center z-0"
+            style="background-image: url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+        </div>
+
+        <div class="relative z-20 text-center px-4">
+            <h1 class="text-5xl md:text-7xl font-serif font-bold text-white mb-4 animate-fade-in-up">Serenity & Balance
+            </h1>
+            <p class="text-xl md:text-2xl text-premium-cream font-light max-w-2xl mx-auto animate-fade-in-up delay-100">
+                Step into a world of tranquility and rejuvenate your mind, body, and soul.</p>
+        </div>
+    </header>
+
+    <!-- Spa Services -->
+    <section class="py-20 px-6 bg-premium-navy">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div
+                    class="bg-white/5 p-8 rounded-lg border border-white/10 hover:border-premium-gold transition duration-300 group">
+                    <h3 class="text-2xl font-serif text-premium-gold mb-4 group-hover:text-white transition">Massages
+                    </h3>
+                    <p class="text-gray-300 mb-6">From Deep Tissue to Swedish massages, our expert therapists use
+                        ancient techniques to relieve tension and restore vitality.</p>
+                    <span class="text-sm font-semibold tracking-wider text-premium-gold uppercase">Explore Treatments
+                        &rarr;</span>
+                </div>
+
+                <!-- Service 2 -->
+                <div
+                    class="bg-white/5 p-8 rounded-lg border border-white/10 hover:border-premium-gold transition duration-300 group">
+                    <h3 class="text-2xl font-serif text-premium-gold mb-4 group-hover:text-white transition">Facials
+                    </h3>
+                    <p class="text-gray-300 mb-6">Experience our signature gold-infused facials designed to hydrate,
+                        brighten, and firm your skin for a radiant glow.</p>
+                    <span class="text-sm font-semibold tracking-wider text-premium-gold uppercase">View Menu
+                        &rarr;</span>
+                </div>
+
+                <!-- Service 3 -->
+                <div
+                    class="bg-white/5 p-8 rounded-lg border border-white/10 hover:border-premium-gold transition duration-300 group">
+                    <h3 class="text-2xl font-serif text-premium-gold mb-4 group-hover:text-white transition">
+                        Hydrotherapy</h3>
+                    <p class="text-gray-300 mb-6">Immerse yourself in our thermal pools, steam rooms, and saunas. The
+                        healing power of water awaits you.</p>
+                    <span class="text-sm font-semibold tracking-wider text-premium-gold uppercase">Discover Facilities
+                        &rarr;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking CTA -->
+    <section class="py-20 bg-premium-dark text-center relative overflow-hidden">
+        <div class="container mx-auto relative z-10">
+            <h2 class="text-4xl font-serif text-white mb-6">Ready to Relax?</h2>
+            <p class="text-gray-400 mb-8 max-w-xl mx-auto">Book your appointment today and let us take care of you.
+                Guests enjoy priority access to all wellness facilities.</p>
+            <a href="booking.html"
+                class="inline-block px-10 py-4 bg-premium-gold text-premium-dark font-bold tracking-widest uppercase hover:bg-white transition-all duration-300 shadow-lg hover:shadow-premium-gold/50">Book
+                Treatment</a>
+        </div>
+    </section>
+
+    <footer class="footer bg-black text-white py-12 border-t border-white/10">
+        <div class="footer-content grid grid-cols-1 md:grid-cols-3 gap-8 container mx-auto px-6">
+            <div class="footer-column footer-about">
+                <h4 class="text-2xl font-serif text-premium-gold mb-4">LuxeStay Hotel</h4>
+                <p class="text-gray-400">Experience the ultimate in luxury and comfort. Our award-winning service and
+                    premium amenities ensure an unforgettable stay.</p>
+            </div>
+            <div class="footer-column">
+                <h4 class="text-xl font-serif text-white mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="about.html" class="text-gray-400 hover:text-premium-gold transition">About Us</a></li>
+                    <li><a href="rooms.html" class="text-gray-400 hover:text-premium-gold transition">Accommodation</a>
+                    </li>
+                    <li><a href="dining.html" class="text-gray-400 hover:text-premium-gold transition">Dining</a></li>
+                    <li><a href="contact.html" class="text-gray-400 hover:text-premium-gold transition">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4 class="text-xl font-serif text-white mb-4">Contact</h4>
+                <ul class="text-gray-400 space-y-2">
+                    <li>123 Luxury Ave, Paradise City</li>
+                    <li>+1 (555) 123-4567</li>
+                    <li>reservations@luxestay.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom text-center mt-12 pt-8 border-t border-white/10 text-gray-500 text-sm">
+            &copy; 2026 LuxeStay Hotel. All rights reserved. Designed for premium guests.
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../app.js"></script>
+
+</body>
+
+</html>
